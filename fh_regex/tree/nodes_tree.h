@@ -2,6 +2,7 @@
 
 #include "nodes.h"
 #include <memory>
+#include <string_view>
 #include <sys/types.h>
 #include <utility>
 #include <vector>
@@ -12,7 +13,8 @@ class NodesTree
     using Node_ptr = std::unique_ptr<Node>;
 
 public:
-    NodesTree(Node_ptr _current_node) : m_current_node(std::move(_current_node)) {}
+    NodesTree(std::string_view _pattern);
+    NodesTree(Node_ptr &&_current_node) : m_current_node(std::move(_current_node)) {}
     NodesTree() {}
 
     void set_left(Node_ptr _value);
@@ -26,8 +28,6 @@ public:
     NodesTree* get_right() { return m_childs.second.get(); }
 
     Node* get_current() const;
-
-    static std::unique_ptr<NodesTree> form_tree(std::string_view _input);
 
     static void print_forward(NodesTree* _tree);
 

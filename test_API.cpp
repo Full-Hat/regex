@@ -7,9 +7,10 @@
 
 int main()
 {
-    RegexChecker checker("HE");
+    std::string_view pattern = "HE.";
+    RegexChecker checker(pattern);
 
-    std::string_view text = "H";
+    std::string_view text = "HEA";
 
     bool matches = false;
     int i = 0;
@@ -21,14 +22,13 @@ int main()
 
         if (result == false)
         {
-            --i;
             break;
         }
     }
 
-    matches = i == (text.size() - 1);
+    matches = i == (text.size()) && (i == (pattern.size()));
 
-    std::cout << "Expression does " << (matches ? "not " : "") << "match text" << std::endl;
+    std::cout << "Expression does " << (matches ? "" : "not ") << "match text" << std::endl;
 
     
     return 0;

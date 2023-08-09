@@ -1,11 +1,12 @@
 #include "regex_checker.h"
 #include "nodes_tree.h"
+#include <memory>
 #include <string_view>
 #include <vector>
 
 RegexChecker::RegexChecker(std::string_view _pattern)
 {
-    m_tree_root = NodesTree::form_tree(_pattern);
+    m_tree_root = std::make_unique<NodesTree>(_pattern);
 
     m_tree_pointers.push_back(m_tree_root.get());
 
