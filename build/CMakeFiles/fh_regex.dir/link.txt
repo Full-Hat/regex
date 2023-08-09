@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfh_regex.a CMakeFiles/fh_regex.dir/fh_regex_API.cpp.o CMakeFiles/fh_regex.dir/fh_regex/tree/nodes_tree.cpp.o CMakeFiles/fh_regex.dir/fh_regex/tree/nodes.cpp.o CMakeFiles/fh_regex.dir/fh_regex/tree/regex_checker.cpp.o
+/usr/bin/ranlib libfh_regex.a

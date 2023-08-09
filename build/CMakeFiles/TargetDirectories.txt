@@ -1,0 +1,5 @@
+/Users/full-hat/Documents/MyProjects/regex/build/CMakeFiles/fh_regex.dir
+/Users/full-hat/Documents/MyProjects/regex/build/CMakeFiles/test_API_EXE.dir
+/Users/full-hat/Documents/MyProjects/regex/build/CMakeFiles/test.dir
+/Users/full-hat/Documents/MyProjects/regex/build/CMakeFiles/edit_cache.dir
+/Users/full-hat/Documents/MyProjects/regex/build/CMakeFiles/rebuild_cache.dir

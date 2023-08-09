@@ -1,0 +1,9 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+    "name": "regex",
+    "version": "1.0.0",
+    "dependencies": [
+        "gtest"
+    ],
+    "builtin-baseline": "2f6176ce98fee807a207dc9e8fec213f111c291b"
+}
